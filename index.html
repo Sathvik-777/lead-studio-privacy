@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lead Studio Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #526078; --line: #dce3ee; --accent: #176b55; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f7fb; color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 850px; margin: 5vh auto; padding: 36px clamp(20px, 5vw, 56px); background: white; border: 1px solid var(--line); border-radius: 18px; }
+    h1 { line-height: 1.15; font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 8px; }
+    h2 { margin: 32px 0 8px; font-size: 1.25rem; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .date { margin: 0 0 28px; color: var(--muted); }
+    footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Lead Studio Privacy Policy</h1>
+  <p class="date">Effective date: October 29, 2026</p>
+  <p>Lead Studio is a local-first lead research and demo-planning tool operated by <strong>Perneti Sathvik Reddy</strong> (“we,” “us,” or “our”). This policy describes information processed when you use Lead Studio and its WhatsApp integration.</p>
+
+  <h2>Information processed</h2>
+  <ul>
+    <li><strong>WhatsApp messages:</strong> Meta delivers messages you send to the configured WhatsApp test or business number to Lead Studio. The app processes the message to carry out your command and reply. It stores message IDs and receipt times to prevent duplicate processing; it does not intentionally store a full WhatsApp conversation transcript.</li>
+    <li><strong>Lead workspace data:</strong> Business names, public website URLs, niche and region, notes you provide, public-source links and snippets, AI research, demo plans, demo files, guides, proposal drafts, and workflow history are stored in a SQLite database and files on the Windows computer running Lead Studio.</li>
+    <li><strong>Account configuration:</strong> WhatsApp access tokens, app secrets, verify tokens, phone-number identifiers, and your allowlisted phone number are entered when the app starts. The launcher keeps WhatsApp credentials in the running process rather than writing them to the Lead Studio database. The OpenAI API key is read from a local environment configuration file or environment variable.</li>
+    <li><strong>Public search:</strong> Search phrases you submit, such as a business niche, region, and opportunity, are sent to DuckDuckGo to retrieve public search results.</li>
+  </ul>
+
+  <h2>How AI services are used</h2>
+  <p>Lead Studio sends the business name, website, niche, notes, public-source snippets, and your instructions to the OpenAI API to rank leads, analyze evidence, and draft plans. Do not enter passwords, payment details, private personal information, or confidential material. If you enable the optional Codex CLI worker, the approved lead context and demo plan are also passed to that worker to build a demo.</p>
+
+  <h2>Service providers</h2>
+  <p>Lead Studio relies on Meta WhatsApp Cloud API to receive and send WhatsApp messages, DuckDuckGo for public search, OpenAI for AI analysis, and Cloudflare Quick Tunnel to route webhook requests to the local computer while the tunnel is running. These providers process data as needed to provide their services under their own terms and privacy policies. If this policy is hosted on GitHub Pages, GitHub may process request data, including visitor IP addresses, under GitHub’s policies.</p>
+
+  <h2>Storage, retention, and deletion</h2>
+  <p>Lead and workflow records remain in the local <code>data</code> folder until you delete them in Lead Studio or remove the local application data. Deleting a lead in the app removes its associated history and demo folder. WhatsApp message IDs used for duplicate prevention remain in the local database until that database is removed. Data sent to Meta, DuckDuckGo, OpenAI, Cloudflare, or the hosting provider is subject to those providers’ retention practices.</p>
+
+  <h2>Sharing and outreach</h2>
+  <p>We do not sell personal information. Lead Studio is designed to research businesses using public information and does not intentionally collect prospects’ private contact details. It creates local demo materials and proposal drafts; it does not email or contact leads automatically.</p>
+
+  <h2>Security</h2>
+  <p>The app’s lead workspace and webhook listeners run locally on the Windows computer. The webhook tunnel makes only the webhook listener reachable over the internet while it is running. Protect the computer and its local configuration files, keep credentials private, and stop the app and tunnel when you are not using them.</p>
+
+  <h2>Children</h2>
+  <p>Lead Studio is a business research tool and is not designed for children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>We may update this policy when Lead Studio or its data practices change. For privacy questions or deletion requests, contact <a href="mailto:sathviknperneti@gmail.com">sathviknperneti@gmail.com</a>.</p>
+
+  <footer>Lead Studio · Local-first research and demo planning</footer>
+</main>
+</body>
+</html>
